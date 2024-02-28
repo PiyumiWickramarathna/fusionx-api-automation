@@ -1,0 +1,11 @@
+{
+  "request": {
+    "mobileNo": "",
+    "email": "",
+    "platform": "string",
+    "deviceId": "R9JN30VA6RH"
+  },
+  "responseObject": {
+    "errorMessage": "Input validation failed [Invalid email address]"
+  }
+}

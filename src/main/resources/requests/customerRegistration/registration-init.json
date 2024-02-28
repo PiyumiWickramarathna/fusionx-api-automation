@@ -1,0 +1,11 @@
+{
+  "request": {
+    "mobileNo": "",
+    "email": "usertest@gmail.com",
+    "platform": "string",
+    "deviceId": "R9JN30VA6RH"
+  },
+  "responseObject": {
+    "message": "OTP is sent to your phone. Please enter the code to continue the registration."
+  }
+}

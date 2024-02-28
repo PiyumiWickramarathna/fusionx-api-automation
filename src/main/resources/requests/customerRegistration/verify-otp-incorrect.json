@@ -1,0 +1,11 @@
+{
+  "request":{
+  "mobileNo": "",
+  "deviceId": "R9JN30VA6RH",
+  "otp": ""
+},
+  "responseObject":
+  {
+  "errorMessage": "OTP verification failed. Please re-enter the verification code sent to your phone. You have only 2 attempt(s) left."
+  }
+}

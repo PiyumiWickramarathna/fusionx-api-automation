@@ -1,0 +1,11 @@
+{
+  "request":{
+  "mobileNo": "",
+  "deviceId": "R9JN30VA6RH",
+  "otp": ""
+},
+  "responseObject":
+  {
+  "message": "Your account verified successfully."
+  }
+}

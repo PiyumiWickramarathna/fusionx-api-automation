@@ -1,0 +1,11 @@
+{
+  "request": {
+    "mobileNo": "",
+    "email": "usertest@gmail.com",
+    "platform": "string",
+    "deviceId": "R9JN30VA6RH"
+  },
+  "responseObject": {
+    "errorMessage": "Please enter your mobile number."
+  }
+}
