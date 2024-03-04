@@ -1,0 +1,19 @@
+{
+  "firstName": "User",
+  "lastName": "Test",
+  "nic": "620980382V",
+  "passport": "199807901149",
+  "nicImagePath": "https://en.wikipedia.org/wiki/Boracay#/media/File:Boracay_White_Beach.png",
+  "kycImagePath": "https://en.wikipedia.org/wiki/Boracay#/media/File:Boracay_White_Beach.png",
+  "profilePicPath": "string",
+  "ekycFcScore": "",
+  "dateOfBirth": "",
+  "address": "abcd",
+  "gender": "MR",
+  "title": "string",
+  "ekycDocType": "DL",
+  "district": "CMB",
+  "givenName": "sabina",
+  "nicOtherImagePath": "string",
+  "nationality": "Lk"
+}

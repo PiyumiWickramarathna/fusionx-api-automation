@@ -1,0 +1,23 @@
+{
+  "request":
+  {
+    "mobileNo": "",
+    "email": "usertest@gmail.com",
+    "platform": "android",
+    "deviceId": "R9JN30VA6RH",
+    "preferredLanguage": "en",
+    "nic": "",
+    "firstName": "User",
+    "lastName": "Test",
+    "referrerId": 0,
+    "latitude": "12",
+    "longitude": "15",
+    "username": "PassUser",
+    "password": "Pass@1234",
+    "nationality": "LKA"
+  },
+  "responseObject": {
+    "errorCode": "917",
+    "errorMessage": "Invalid NIC number. Please re-check you NIC number."
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "request": {
+    "payer": "niroshi@LOFC@6",
+    "amount": "650",
+    "payeeBankId": 1,
+    "isTxnViaBeneficiaryId": "N",
+    "beneficiaryId": 0
+  },
+  "response": {
+    "responseCode": "string",
+    "responseMessage": "string"
+  }
+}

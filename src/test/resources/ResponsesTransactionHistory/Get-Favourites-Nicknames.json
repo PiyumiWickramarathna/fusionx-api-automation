@@ -1,0 +1,47 @@
+{
+    "responseCode": "000",
+    "responseObject": [
+        {
+            "id": 1200,
+            "nickName": "Reload"
+        },
+        {
+            "id": 1483,
+            "nickName": "lolc cc"
+        },
+        {
+            "id": 1484,
+            "nickName": "LC CC"
+        },
+        {
+            "id": 1485,
+            "nickName": "Bill"
+        },
+        {
+            "id": 1629,
+            "nickName": "ft"
+        },
+        {
+            "id": 1711,
+            "nickName": "Thanuj"
+        },
+        {
+            "id": 1816,
+            "nickName": "Insurance Takaful "
+        },
+        {
+            "id": 1896,
+            "nickName": "ffff"
+        },
+        {
+            "id": 2818,
+            "nickName": "automation"
+        },
+        {
+            "id": 2819,
+            "nickName": "sarasavi"
+        }
+    ],
+    "checksum": null,
+    "encryptionStatus": null
+}

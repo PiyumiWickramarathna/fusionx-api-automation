@@ -1,0 +1,18 @@
+{
+"request":
+{
+  "deviceId":"10f404d5a09e8e381b2bc82998ac90db",
+  "payeeBankId":"1","payer":"niroshi@LOFC@6",
+  "platform":"Android",
+  "sourceOfFund":"BANK_ACCOUNT",
+  "transactionType":"FUND_TRANSFER"
+},
+  "response": {
+    "responseCode":"000",
+    "responseObject":{"total_available_amount":"18850.0","total_daily_transaction":"1150.0","max_per_transaction_amount":"15000.00","max_daily_transaction_amount":"20000.00"},
+    "checksum":null,
+    "encryptionStatus":null}
+
+
+
+}

@@ -1,0 +1,12 @@
+{
+  "request": {
+    "amount":"50.00",
+    "payer":"niroshi@LOFC@6",
+    "sourceOfFund":"BANK_ACCOUNT"
+  },
+  "response": {
+    "responseCode":"000",
+    "responseObject":{"customerMobileNumber":"0712825369","isOTPGenerate":"N"},
+    "checksum":null,
+    "encryptionStatus":null}
+}

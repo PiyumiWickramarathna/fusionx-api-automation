@@ -1,0 +1,67 @@
+{
+    "responseCode": "000",
+    "responseObject": [
+        {
+            "utilityMerchantCode": "SLTU004900",
+            "utilityMerchantName": "Sri Lanka Telecom"
+        },
+        {
+            "utilityMerchantCode": "MOBU014814",
+            "utilityMerchantName": "Mobitel Reload"
+        },
+        {
+            "utilityMerchantCode": "MOBU034814",
+            "utilityMerchantName": "Mobitel Data Plans"
+        },
+        {
+            "utilityMerchantCode": "1",
+            "utilityMerchantName": "LOLC Credit Card"
+        },
+        {
+            "utilityMerchantCode": "30",
+            "utilityMerchantName": "Lanka Clear Credit Card"
+        },
+        {
+            "utilityMerchantCode": "MOBU024814",
+            "utilityMerchantName": "Mobitel Bill Payments"
+        },
+        {
+            "utilityMerchantCode": "492",
+            "utilityMerchantName": "LOFC - LEASING"
+        },
+        {
+            "utilityMerchantCode": "1076",
+            "utilityMerchantName": "Dialog Mobile (Lofin)"
+        },
+        {
+            "utilityMerchantCode": "5",
+            "utilityMerchantName": "LOLC GENERAL INSURANCE PA"
+        },
+        {
+            "utilityMerchantCode": "LOLC_GI",
+            "utilityMerchantName": "LOLC General Insurance"
+        },
+        {
+            "utilityMerchantCode": "LOLC_GI_TAKAFUL",
+            "utilityMerchantName": "LOLC General Insurance Takaful"
+        },
+        {
+            "utilityMerchantCode": "YOUCAB",
+            "utilityMerchantName": "YOUCAB"
+        },
+        {
+            "utilityMerchantCode": "SADAHARITHA",
+            "utilityMerchantName": "Sadaharitha"
+        },
+        {
+            "utilityMerchantCode": "AQUAFRESH",
+            "utilityMerchantName": "Aquafresh"
+        },
+        {
+            "utilityMerchantCode": "NWSU004900",
+            "utilityMerchantName": "Water Board"
+        }
+    ],
+    "checksum": null,
+    "encryptionStatus": null
+}
