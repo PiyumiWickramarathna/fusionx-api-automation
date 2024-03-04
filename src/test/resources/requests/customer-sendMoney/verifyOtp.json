@@ -1,0 +1,12 @@
+{
+  "request":{"otp":"3623","payer":"niroshi@LOFC@6","sourceOfFund":"BANK_ACCOUNT"},
+
+  "response":
+  {
+    "responseCode":"000",
+    "responseObject":{"isValid":"Y","remainAttepts":3},
+    "checksum":null,
+    "encryptionStatus":null
+  }
+
+}

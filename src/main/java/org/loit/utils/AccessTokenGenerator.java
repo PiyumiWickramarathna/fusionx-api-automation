@@ -1,10 +1,10 @@
 package org.loit.utils;
 
 
-import config.factory.ApiConfigFactory;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
+import org.loit.config.factory.ApiConfigFactory;
 
 import java.io.FileReader;
 import java.io.IOException;

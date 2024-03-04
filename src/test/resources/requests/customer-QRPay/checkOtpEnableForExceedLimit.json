@@ -1,0 +1,4 @@
+{
+  "request":  {"amount":"3500.00","payer":"0763434555_C1@LOFC@1","sourceOfFund":"BANK_ACCOUNT"},
+  "response":{"responseCode":"000","responseObject":{"customerMobileNumber":"0763434555","isOTPGenerate":"Y"},"checksum":null,"encryptionStatus":null}
+}

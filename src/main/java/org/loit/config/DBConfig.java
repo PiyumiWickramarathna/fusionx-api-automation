@@ -4,31 +4,31 @@ import org.aeonbits.owner.Config;
 
 @Config.LoadPolicy(Config.LoadType.MERGE)
 @Config.Sources({
-  "file:${user.dir}/src/test/resources/db-config.properties",
+        "file:${user.dir}/src/test/resources/db-config.properties",
 })
 public interface DBConfig extends Config {
 
-  @Key("dbMainUrl")
-  String DBConnectionUrl();
-  @Key("dbMainUrlAlt")
-  String DBConnectionUrlAlt();
+    @Key("dbMainUrl")
+    String DBConnectionUrl();
+    @Key("dbMainUrlDevEnvironment")
+    String DBConnectionUrlDevEnvironment();
 
-  @Key("user")
-  String DBUser();
+    @Key("user")
+    String DBUser();
 
-  @Key("password")
-  String DBPassword();
+    @Key("password")
+    String DBPassword();
 
-  @Key("useSSL")
-  String DBUseSSL();
-  @Key("requireSSL")
-  String DBRequireSSL();
-  @Key("clientCertificateKeyStoreUrl")
-  String DBClientCertificateKeyStoreUrl();
-  @Key("clientCertificateKeyStorePassword")
-  String DBClientCertificateKeyStorePassword();
+    @Key("useSSL")
+    String DBUseSSL();
+    @Key("requireSSL")
+    String DBRequireSSL();
+    @Key("clientCertificateKeyStoreUrl")
+    String DBClientCertificateKeyStoreUrl();
+    @Key("clientCertificateKeyStorePassword")
+    String DBClientCertificateKeyStorePassword();
 
-  @Key("trustCertificateKeyStoreUrl")
-  String DBTrustCertificateKeyStoreUrl();
+    @Key("trustCertificateKeyStoreUrl")
+    String DBTrustCertificateKeyStoreUrl();
 
 }

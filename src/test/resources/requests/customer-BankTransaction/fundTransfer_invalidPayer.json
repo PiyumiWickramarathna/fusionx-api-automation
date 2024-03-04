@@ -1,0 +1,18 @@
+{
+  "request": {
+    "payer": "string",
+    "amount": "300",
+    "payeeBankId": 0,
+    "isTxnViaBeneficiaryId": "string",
+    "beneficiaryId": 0
+  },
+  "response": {
+    "responseCode":  "999",
+    "responseObject": {
+      "errorCode": "023",
+      "errorMessage": "Invalid payer details found. Please contact iPay call centre for more details."
+    },
+    "checksum": null,
+    "encryptionStatus": null
+  }
+}

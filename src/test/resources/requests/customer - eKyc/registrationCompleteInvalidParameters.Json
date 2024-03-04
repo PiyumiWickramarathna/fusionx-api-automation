@@ -1,0 +1,19 @@
+{
+  "firstName": "User",
+  "lastName": "Test",
+  "nic": "620980382V",
+  "passport": "199807901149",
+  "nicImagePath": "https://objects-developer.ipay.lk/customerkyc/loggedInUsername_1699330926483_scanid.jpg",
+  "kycImagePath": "https://objects-developer.ipay.lk/customerkyc/loggedInUsername_1699330926483_scanid.jpg",
+  "profilePicPath": "string",
+  "ekycFcScore": "",
+  "dateOfBirth": "",
+  "address": "abcd",
+  "gender": "MR",
+  "title": "string",
+  "ekycDocType": "DL",
+  "district": "CMB",
+  "givenName": "sabina",
+  "nicOtherImagePath": "string",
+  "nationality": "Lk"
+}

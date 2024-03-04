@@ -1,0 +1,12 @@
+{
+  "request": {
+    "amount":"29.00",
+    "payer":"0717938991_C1@LOFC@2",
+    "sourceOfFund":"BANK_ACCOUNT"
+  },
+  "response": {
+    "responseCode":"000",
+    "responseObject":{"customerMobileNumber":"0717938991","isOTPGenerate":"N"},
+    "checksum":null,
+    "encryptionStatus":null}
+}

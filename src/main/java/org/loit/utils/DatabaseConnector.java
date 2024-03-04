@@ -1,6 +1,6 @@
 package org.loit.utils;
 
-import config.factory.ApiConfigFactory;
+import org.loit.config.factory.ApiConfigFactory;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -10,8 +10,7 @@ import java.util.Properties;
 
 public class DatabaseConnector {
     public String getRegistrationOtp(String mobileNo) throws Exception {
-//        Connection connection = DriverManager.getConnection(ApiConfigFactory.getDBConfig().DBConnectionUrl(), dbProperties());
-        Connection connection = DriverManager.getConnection(ApiConfigFactory.getDBConfig().DBConnectionUrlAlt(), dbProperties());
+        Connection connection = DriverManager.getConnection(ApiConfigFactory.getDBConfig().DBConnectionUrlDevEnvironment(), dbProperties());
 
         // Verify the OTP for the given mobile number
         String query = "SELECT otp FROM user_registration_otp WHERE mobile_no = ? ORDER BY created_date DESC LIMIT 1";
@@ -29,7 +28,7 @@ public class DatabaseConnector {
     }
 
     public String getCustomerUsername(String mobileNo) throws Exception {
-        Connection connection = DriverManager.getConnection(ApiConfigFactory.getDBConfig().DBConnectionUrl(), dbProperties());
+        Connection connection = DriverManager.getConnection(ApiConfigFactory.getDBConfig().DBConnectionUrlDevEnvironment(), dbProperties());
         String query = "SELECT username FROM user_credentials, customer WHERE user_credentials.id = customer.user_credentials_id AND customer.phone= ?";
         PreparedStatement preparedStatement = connection.prepareStatement(query);
         preparedStatement.setString(1, mobileNo);
@@ -44,7 +43,7 @@ public class DatabaseConnector {
 
 
     public String getCustomerId(String randomMobileNumber) throws Exception {
-        Connection connection = DriverManager.getConnection(ApiConfigFactory.getDBConfig().DBConnectionUrlAlt(), dbProperties());
+        Connection connection = DriverManager.getConnection(ApiConfigFactory.getDBConfig().DBConnectionUrlDevEnvironment(), dbProperties());
         String query = "SELECT id FROM customer WHERE phone = ? ORDER BY created_date DESC LIMIT 1";
         PreparedStatement preparedStatement = connection.prepareStatement(query);
         preparedStatement.setString(1, randomMobileNumber);
@@ -56,21 +55,38 @@ public class DatabaseConnector {
         return customerId;
     }
 
+    public String verifyOtpForFundTransactions() throws Exception {
+        Connection connection = DriverManager.getConnection(ApiConfigFactory.getDBConfig().DBConnectionUrlDevEnvironment(), dbProperties());
+
+        // Verify the OTP for the given mobile number
+        String query = "SELECT otp FROM amount_exceed_otp WHERE mobile_number =\"0712528369\" ORDER BY created_date DESC LIMIT 1";
+        PreparedStatement preparedStatement = connection.prepareStatement(query);
+
+        ResultSet resultSet = preparedStatement.executeQuery();
+        String verifyOtp = null;
+        while (resultSet.next()) {
+            verifyOtp = resultSet.getString("otp");
+        }
+
+        return verifyOtp;
+
+    }
+
 
     public Properties dbProperties() {
         Properties dbProps = new Properties();
         dbProps.setProperty("user", ApiConfigFactory.getDBConfig().DBUser());
         dbProps.setProperty("password", ApiConfigFactory.getDBConfig().DBPassword());
-//        dbProps.setProperty("useSSL",ApiConfigFactory.getDBConfig().DBUseSSL());
-//        dbProps.setProperty("requireSSL",ApiConfigFactory.getDBConfig().DBRequireSSL());
-//        dbProps.setProperty("clientCertificateKeyStoreUrl",ApiConfigFactory.getDBConfig().DBClientCertificateKeyStoreUrl());
+        dbProps.setProperty("useSSL",ApiConfigFactory.getDBConfig().DBUseSSL());
+        dbProps.setProperty("requireSSL",ApiConfigFactory.getDBConfig().DBRequireSSL());
+        dbProps.setProperty("clientCertificateKeyStoreUrl",ApiConfigFactory.getDBConfig().DBClientCertificateKeyStoreUrl());
 //        dbProps.setProperty("clientCertificateKeyStorePassword",ApiConfigFactory.getDBConfig().DBClientCertificateKeyStorePassword());
-//        dbProps.setProperty("trustCertificateKeyStoreUrl",ApiConfigFactory.getDBConfig().DBTrustCertificateKeyStoreUrl());
+        dbProps.setProperty("trustCertificateKeyStoreUrl",ApiConfigFactory.getDBConfig().DBTrustCertificateKeyStoreUrl());
         return dbProps;
     }
 
     public String getPublicKey() throws Exception {
-        Connection connection = DriverManager.getConnection(ApiConfigFactory.getDBConfig().DBConnectionUrlAlt(), dbProperties());
+        Connection connection = DriverManager.getConnection(ApiConfigFactory.getDBConfig().DBConnectionUrlDevEnvironment(), dbProperties());
 
         // Verify the OTP for the given mobile number
         String query = "SELECT public_key from device WHERE device_id = '5fec0aaf1fc65d8c4a6fe7b4fc943aae'";

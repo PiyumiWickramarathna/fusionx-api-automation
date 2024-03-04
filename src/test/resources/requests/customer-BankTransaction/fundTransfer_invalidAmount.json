@@ -1,0 +1,18 @@
+{
+  "request": {
+    "payer": "string",
+    "amount": "String",
+    "payeeBankId": 0,
+    "isTxnViaBeneficiaryId": "string",
+    "beneficiaryId": 0
+  },
+  "response": {
+    "responseCode":  "999",
+    "responseObject": {
+      "errorCode": "021",
+      "errorMessage": "Please enter a valid amount."
+    },
+    "checksum": null,
+    "encryptionStatus": null
+  }
+}

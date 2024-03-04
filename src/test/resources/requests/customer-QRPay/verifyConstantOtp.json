@@ -1,0 +1,12 @@
+{
+  "request": {"otp":"3800","payer":"0763434555_C1@LOFC@1","sourceOfFund":"BANK_ACCOUNT"},
+
+  "response":
+  {
+    "responseCode":"000",
+    "responseObject":{"isValid":"N","remainAttepts":3},
+    "checksum":null,
+    "encryptionStatus":null
+  }
+
+}
